@@ -38,6 +38,7 @@ So all credit to
 Commanda are using the following setup
 
 http://192.168.42.1/cgi-bin/cgi?CMD=INDEX_PAGE
+
 http://192.168.42.1/cgi-bin/cgi?CMD=SET_WIFI_SPEED&rate=9
 
 
@@ -149,10 +150,12 @@ There are diffrent streams that the drone send.
 
 #### CGO2+/CGO3/CGO3+
 Media files:		http://192.168.42.1/DCIM/100MEDIA/
+
 Live stream:		rtsp://192.168.42.1/live   *Working*
 
 #### CGO-ET
 Natural live stream:	rtsp://192.168.42.1:554/live *working*
+
 Thermal stream:	rtsp://192.168.42.1:8554/live
 
 #### MK58/GoPro
