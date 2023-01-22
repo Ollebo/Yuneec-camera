@@ -10,6 +10,7 @@ COPY requirements.txt /code/
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 RUN pip3 install -r requirements.txt
 RUN mkdir /files
+RUN mkdir /images
 COPY . /code/
 WORKDIR /code
 

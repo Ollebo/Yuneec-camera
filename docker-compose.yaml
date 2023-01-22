@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - ./:/code
+      - ./images:/images
     command: tail -f /etc/fstab
     network_mode: host
     ports:

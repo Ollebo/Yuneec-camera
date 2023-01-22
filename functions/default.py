@@ -1,8 +1,16 @@
+#Import commands
+from functions.photo import TAKE_PHOTO 
+
+
+
+
+
 def commandSelect(CMD,data):
     #
     # This function will send the commands to the correct function
     if (CMD == "TAKE_PHOTO"):
         print("Taking phoyo")
+        return TAKE_PHOTO(data)
     elif (CMD == "START_VIDEO"):
         print("Start Video")
     elif (CMD == "SET_PHOTO_SIZE"):

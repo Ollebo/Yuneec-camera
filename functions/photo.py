@@ -4,6 +4,7 @@
 # To take images from every stream configured
 
 import asyncio
+import threading
 import cv2
 import os
 import cv2
@@ -11,11 +12,10 @@ import time
 from datetime import datetime
 import getpass
 
-async def takePhotos(stream,id):
+async def takePhotos(RTSP_URL,id,KEEPGOINT=False):
     '''
     Command to take the photos froms stream 
     '''
-    RTSP_URL = 'rtsp://127.0.0.1/live'
 
     os.environ['OPENCV_FFMPEG_CAPTURE_OPTIONS'] = 'rtsp_transport;tcp'
     cap = cv2.VideoCapture(RTSP_URL)
@@ -34,7 +34,7 @@ async def takePhotos(stream,id):
             break
         imagesCount = int(str(datetime.now().strftime("%S")))
 
-        filename = "images/image_" + str(datetime.now().strftime("%d-%m-%Y_%I-%M-%S"))  + ".jpg"
+        filename = "/images/image_" + str(datetime.now().strftime("%d-%m-%Y_%I-%M-%S"))  + ".jpg"
 
         cv2.imwrite(filename, frame)
         cv2.waitKey(1)
@@ -42,17 +42,29 @@ async def takePhotos(stream,id):
         #
         # Deping on the frame rate we add images for 3 sec to be shoure we get any image with all frames.
         #
+        print("Taking photo")
+
         if imagesCount > startImagesCount+2:
-            cap.release()
-            break
-
-
-
+            if KEEPGOINT:
+                #check if we have break file
+                print("Check for break file")
+            else:
+                cap.release()
+                break
 
 
 def TAKE_PHOTO(data):
     #Set the phoyo size
-    MODE = data.get('MODE')
-    print(MODE)
-    asyncio.run(takePhotos("stream",2))
+    #x = threading.Thread(target=takePhotos, args=("rtsp://127.0.0.1/live",0))
+    #x3.start()
+    #x.join()
+
+
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    task = loop.create_task(takePhotos("rtsp://127.0.0.1/live",0))
+    loop.run_until_complete(task)
+
+
+  
     return {"rval":0, "msg_id":1} 
