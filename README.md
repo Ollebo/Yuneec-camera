@@ -1,7 +1,25 @@
 # Yuneec-camera
 
 
-Project to make a raspberry ore small comoter work as camera for the Yuneec Drone
+Project to make a raspberry ore small computer work as camera for the Yuneec Drone
+
+Today supported are 
+ -rock4b+  wiki.radxiw lista.com/Rockpi4
+
+(Script will proberly work for any ubuntu based computer ore raspberry )
+
+
+## Pre
+Some pre req are requerd before you can run the script. The wifi card need to be able to be activated infor AP mode.
+
+'''
+iw list
+'''
+
+Look for the AP mode
+
+
+
 
 
 ## Flow
@@ -11,6 +29,10 @@ The rtsp server also can converts streams to lower qualty if need and lower fram
 
 Api server that lisses on CGI calls from the controller. The Api server can then triggers command.
 Phots and videos are saved from the rtsp stream.
+
+
+## Install
+In the setup folder here are script to install all package and tools needed to test and start the project.
 
 
 ### Support for multi camera

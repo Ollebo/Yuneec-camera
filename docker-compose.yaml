@@ -8,7 +8,7 @@ services:
       - WIFI_NAME=mattes
       - WIFI_PASSWORD=12345678
       - WIFI_DEVICE=wlan0
-      - IPADDR=172.168.22.1/24        
+      - IPADDR=192.168.42.1/24        
   api:
     build: .
     volumes:
