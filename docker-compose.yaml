@@ -1,5 +1,14 @@
 version: '2'
 services:
+  network:
+    build: network/
+    network_mode: host
+    privileged: true
+    environment:
+      - WIFI_NAME=mattes
+      - WIFI_PASSWORD=12345678
+      - WIFI_DEVICE=wlan0
+      - IPADDR=172.168.22.1/24        
   api:
     build: .
     volumes:
