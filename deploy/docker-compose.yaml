@@ -1,7 +1,6 @@
 version: '2'
 services:
   network:
-    build: network/
     image: ollebo/yun-network
     network_mode: host
     privileged: true
@@ -11,12 +10,10 @@ services:
       - WIFI_DEVICE=wlan0
       - IPADDR=192.168.42.1/24        
   api:
-    build: .
     image: ollebo/yun-api
     volumes:
       - ./:/code
       - ./images:/images
-    #command: tail -f /etc/fstab
     network_mode: host
     ports:
       - 8080:8080
@@ -25,7 +22,6 @@ services:
     depends_on: 
       - ffmpeg
   rtsp:
-    build: rtsp/
     image: ollebo/yun-rtsp
     environment:
       - RTSP_API=yes
@@ -33,7 +29,6 @@ services:
       - RTSP_LOGLEVEL=debug
     network_mode: host
   ffmpeg:
-    build: ffmpeg/
     image: ollebo/ffmpeg
     network_mode: host
     privileged: true

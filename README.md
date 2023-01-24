@@ -35,13 +35,13 @@ Phots and videos are saved from the rtsp stream.
 In the setup folder here are script to install all package and tools needed to test and start the project.
 
 
-### Support for multi camera
+## Support for multi camera
 The rtsp server can stream many difrents stream. Only one stream can be sent back to the controller. But the api will we able to recors and take phots from all streams.
 Have not yeat come up with the ide how you can swap cameras during flight
 Possible to start the ffpmeg with python and then change the stream. Ore using the RTSP api and from there change the stream name.... Lets se 
 
 
-### Test video
+## Test video
 To test the video you can start ony the rtsp server and then test to stream for your raspberry ore rock against the rtsp server.
 On Rock i hade to test my way to find the correct video device
 
@@ -64,7 +64,7 @@ Photos can be alter using env to from what stream images should be taken from.
 
 
 
-### Network hostspot with hostapd
+## Network hostspot with hostapd
 Then started a docker container is started that set the IP address for wlan0 (Ore any other wlan config in docker-compose file)
 And bring up a wifi AP to be connected.
 
@@ -74,10 +74,18 @@ You can with ENV in the docker file configure the settings
 ## Dev
 As a dev you can use the docker compose to start up the dev enviroment.
 It includes a ffmpeg that stream from you locak webcam. rtsp Server and the API.
-You can test the aoi with the test curl from the test folder.
+You can test the api with the test curl from the /test folder.
 
 ## Deploy
 Then the deploy folder follow the instructions how the setup you devices to run on diffrent yuneec drones.
+
+
+
+It will bring up the rtsp server and the API.
+Then you need to add the ffpmpeg commands to start stream into the rtsp server.
+You also need to tell the API on what streams to record video and take photos.
+
+
 
 
 ## Communicate
