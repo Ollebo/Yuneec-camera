@@ -14,7 +14,7 @@ services:
     volumes:
       - ./:/code
       - ./images:/images
-    command: tail -f /etc/fstab
+    #command: tail -f /etc/fstab
     network_mode: host
     ports:
       - 8080:8080
@@ -35,6 +35,6 @@ services:
     privileged: true
     volumes:
       - /dev:/dev
-    command: ffmpeg -f v4l2 -i /dev/video0 -pix_fmt yuv420p -preset ultrafast -b:v 600k -f rtsp rtsp://localhost:554/live
+    command: ffmpeg -f v4l2 -i /dev/video4 -pix_fmt yuv420p -preset ultrafast -b:v 600k -f rtsp rtsp://localhost:554/live
     depends_on:
       - rtsp

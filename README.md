@@ -15,7 +15,38 @@ Phots and videos are saved from the rtsp stream.
 
 ### Support for multi camera
 The rtsp server can stream many difrents stream. Only one stream can be sent back to the controller. But the api will we able to recors and take phots from all streams.
+Have not yeat come up with the ide how you can swap cameras during flight
+Possible to start the ffpmeg with python and then change the stream. Ore using the RTSP api and from there change the stream name.... Lets se 
 
+
+### Test video
+To test the video you can start ony the rtsp server and then test to stream for your raspberry ore rock against the rtsp server.
+On Rock i hade to test my way to find the correct video device
+
+'''
+ffmpeg -f v4l2 -i /dev/video4 -pix_fmt yuv420p -preset ultrafast -b:v 600k -f rtsp rtsp://localhost:554/live
+'''
+
+
+To watch the stream then I use mplayer on ubuntu
+
+'''
+mplayer rtsp://IP/live
+'''
+
+
+This will also be the way to setup correct framerate and settings for you video.
+Its possible to stream high video to the RTSP server on /high. Then using the rtsp server lower the video quality and stream it to /live for the st16 controller.
+Photos can be alter using env to from what stream images should be taken from.
+
+
+
+
+### Network hostspot with hostapd
+Then started a docker container is started that set the IP address for wlan0 (Ore any other wlan config in docker-compose file)
+And bring up a wifi AP to be connected.
+
+You can with ENV in the docker file configure the settings
 
 
 ## Dev
