@@ -10,4 +10,5 @@ wpa=2
 wpa_passphrase=$WIFI_PASSWORD
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
+wme_enabled=1
 rsn_pairwise=CCMP

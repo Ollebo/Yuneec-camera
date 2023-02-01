@@ -1,6 +1,6 @@
 from ubuntu
 
-RUN apt-get update && apt-get install hostapd iproute2 gettext-base  -y 
+RUN apt-get update && apt-get install hostapd iproute2 gettext-base dnsmasq   -y 
 
 COPY hostapd/* /etc/hostapd 
 
