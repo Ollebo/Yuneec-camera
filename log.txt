@@ -1,0 +1,125 @@
+uneec-camera-rtsp-1     | 2023/02/01 16:49:01 DEB [RTSP] [conn 192.168.42.52:55328] [c->s] PLAY rtsp://192.168.42.1:554/live RTSP/1.0
+yuneec-camera-rtsp-1     | CSeq: 5
+yuneec-camera-rtsp-1     | Range: npt=0.000-
+yuneec-camera-rtsp-1     | Session: 589054ef-36f2-470b-bd28-495d116b2e90
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:01 INF [RTSP] [session dceb2bcd] is reading from path 'live', with UDP, 1 track (Generic)
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:01 DEB [RTSP] [conn 192.168.42.52:55328] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 5
+yuneec-camera-rtsp-1     | RTP-Info: url=rtsp://192.168.42.1:554/live/mediaUUID=660d8eca-89ce-4799-9467-ab2f062afe43;seq=7604;rtptime=2493448302
+yuneec-camera-rtsp-1     | Server: gortsplib
+yuneec-camera-rtsp-1     | Session: 589054ef-36f2-470b-bd28-495d116b2e90;timeout=60
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:01 DEB [RTSP] [conn 192.168.42.52:55328] [c->s] OPTIONS rtsp://192.168.42.1:554/live RTSP/1.0
+yuneec-camera-rtsp-1     | CSeq: 6
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:01 DEB [RTSP] [conn 192.168.42.52:55328] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 6
+yuneec-camera-rtsp-1     | Public: DESCRIBE, ANNOUNCE, SETUP, PLAY, RECORD, PAUSE, GET_PARAMETER, TEARDOWN
+yuneec-camera-rtsp-1     | Server: gortsplib
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:02 DEB [RTSP] [conn 192.168.42.52:55328] [c->s] TEARDOWN rtsp://192.168.42.1:554/live RTSP/1.0
+yuneec-camera-rtsp-1     | CSeq: 7
+yuneec-camera-rtsp-1     | Session: 589054ef-36f2-470b-bd28-495d116b2e90
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:02 INF [RTSP] [session dceb2bcd] destroyed (teared down by 192.168.42.52:55328)
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:02 DEB [RTSP] [conn 192.168.42.52:55328] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 7
+yuneec-camera-rtsp-1     | Server: gortsplib
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:02 INF [RTSP] [conn 192.168.42.52:55328] closed (EOF)
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 INF [RTSP] [conn 192.168.42.52:36607] opened
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [c->s] OPTIONS rtsp://192.168.42.1:554/live RTSP/1.0
+yuneec-camera-rtsp-1     | CSeq: 2
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 2
+yuneec-camera-rtsp-1     | Public: DESCRIBE, ANNOUNCE, SETUP, PLAY, RECORD, PAUSE, GET_PARAMETER, TEARDOWN
+yuneec-camera-rtsp-1     | Server: gortsplib
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [c->s] DESCRIBE rtsp://192.168.42.1:554/live RTSP/1.0
+yuneec-camera-rtsp-1     | Accept: application/sdp
+yuneec-camera-rtsp-1     | CSeq: 3
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 3
+yuneec-camera-rtsp-1     | Content-Base: rtsp://192.168.42.1:554/live/
+yuneec-camera-rtsp-1     | Content-Length: 306
+yuneec-camera-rtsp-1     | Content-Type: application/sdp
+yuneec-camera-rtsp-1     | Server: gortsplib
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | v=0
+yuneec-camera-rtsp-1     | o=- 0 0 IN IP4 127.0.0.1
+yuneec-camera-rtsp-1     | s=Stream
+yuneec-camera-rtsp-1     | c=IN IP4 0.0.0.0
+yuneec-camera-rtsp-1     | t=0 0
+yuneec-camera-rtsp-1     | m=video 0 RTP/AVP 96
+yuneec-camera-rtsp-1     | a=control:mediaUUID=660d8eca-89ce-4799-9467-ab2f062afe43
+yuneec-camera-rtsp-1     | a=rtpmap:96 MP4V-ES/90000
+yuneec-camera-rtsp-1     | a=fmtp:96 profile-level-id=1; config=000001B001000001B58913000001000000012000C48D8800F514043C1443000001B24C61766335382E39312E313030
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [c->s] SETUP rtsp://192.168.42.1:554/live/mediaUUID=660d8eca-89ce-4799-9467-ab2f062afe43 RTSP/1.0
+yuneec-camera-rtsp-1     | CSeq: 4
+yuneec-camera-rtsp-1     | Transport: RTP/AVP/UDP;unicast;client_port=35038-35039
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 INF [RTSP] [session dd32e124] created by 192.168.42.52:36607
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 4
+yuneec-camera-rtsp-1     | Server: gortsplib
+yuneec-camera-rtsp-1     | Session: 71d9a331-661b-4c2a-8723-1b2f52df7363;timeout=60
+yuneec-camera-rtsp-1     | Transport: RTP/AVP;unicast;client_port=35038-35039;server_port=8000-8001;ssrc=44EB1216
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [c->s] PLAY rtsp://192.168.42.1:554/live RTSP/1.0
+yuneec-camera-rtsp-1     | CSeq: 5
+yuneec-camera-rtsp-1     | Range: npt=0.000-
+yuneec-camera-rtsp-1     | Session: 71d9a331-661b-4c2a-8723-1b2f52df7363
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 INF [RTSP] [session dd32e124] is reading from path 'live', with UDP, 1 track (Generic)
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 5
+yuneec-camera-rtsp-1     | RTP-Info: url=rtsp://192.168.42.1:554/live/mediaUUID=660d8eca-89ce-4799-9467-ab2f062afe43;seq=7672;rtptime=2493591436
+yuneec-camera-rtsp-1     | Server: gortsplib
+yuneec-camera-rtsp-1     | Session: 71d9a331-661b-4c2a-8723-1b2f52df7363;timeout=60
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [c->s] OPTIONS rtsp://192.168.42.1:554/live RTSP/1.0
+yuneec-camera-rtsp-1     | CSeq: 6
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 6
+yuneec-camera-rtsp-1     | Public: DESCRIBE, ANNOUNCE, SETUP, PLAY, RECORD, PAUSE, GET_PARAMETER, TEARDOWN
+yuneec-camera-rtsp-1     | Server: gortsplib
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [c->s] TEARDOWN rtsp://192.168.42.1:554/live RTSP/1.0
+yuneec-camera-rtsp-1     | CSeq: 7
+yuneec-camera-rtsp-1     | Session: 71d9a331-661b-4c2a-8723-1b2f52df7363
+yuneec-camera-rtsp-1     | User-Agent: Yuneec RTSP protocol
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 INF [RTSP] [session dd32e124] destroyed (teared down by 192.168.42.52:36607)
+yuneec-camera-rtsp-1     | 2023/02/01 16:49:03 DEB [RTSP] [conn 192.168.42.52:36607] [s->c] RTSP/1.0 200 OK
+yuneec-camera-rtsp-1     | CSeq: 7
+yuneec-camera-rtsp-1     | Server: gortsplib
+
