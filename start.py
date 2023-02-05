@@ -26,12 +26,12 @@ def commands():
 	#we get a command to act on
 	CMD = request.args.get('CMD')
 	print(request.args)
-	response= json.dumps(commandSelect(CMD,request.args))
-	#response = app.response_class(
-	#	response=json.dumps(data),
-	#	status=200,
-	#	mimetype='application/json'
-	#)
+	data= json.dumps(commandSelect(CMD,request.args))
+	response = app.response_class(
+		response=data,
+		status=200,
+		mimetype='application/json'
+	)
 	print(response)
 	return response
 
