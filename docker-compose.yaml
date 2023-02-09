@@ -45,8 +45,9 @@ services:
     environment:
       - RTSP_API=yes
       - RTSP_APIADDRESS=0.0.0.0:9997
-      - RTSP_LOGLEVEL=info
+      - RTSP_LOGLEVEL=debug
     network_mode: host
+    privileged: true
   ffmpeg:
     build: ffmpeg/
     image: ollebo/ffmpeg

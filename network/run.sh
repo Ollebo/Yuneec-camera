@@ -4,6 +4,8 @@ echo "Restart network nic"
 
 
 echo "Setup network interface"
+ip link set  $WIFI_DEVICE down
+ip link set  $WIFI_DEVICE up
 ip addr add $IPADDR dev $WIFI_DEVICE
 ip a
 

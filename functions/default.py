@@ -141,7 +141,7 @@ def INDEX_PAGE(data):
         "shutter_time": "30",
         "iso_value": "ISO_600",
         "photo_format": "jpg",
-        "audio_enable": "1",
+        "audio_enable": "0",
         "rtsp_res": "720P",
         "photo_mode": "1",
         "photo_num": "1",
@@ -167,7 +167,7 @@ def GET_STATUS(data):
     #Set the phoyo size
     MODE = data.get('MODE')
     print(MODE)
-    returnData={"rval":0, "msg_id":1, "cam_mode":"1", "status":"vf","sdfree":"0","sdtotal":"0","record_time":"0","white_balance":"0","ae_enable":"1","iq_type":"0","exposure_value":"0.0","video_mode":"3840x2160F30","awb_lock":"0","audio_sw":"1","shutter_time":"30","iso_value":"ISO_3200","photo_format":"jpg", "rtsp_res":"720P", "photo_mode":"3", "photo_num":"0", "photo_times":"1", "ev_step":"0.000000", "interval_ms":"1000", "cam_scene":"0", "audio_enable":"1","left_time": "0","metering_mode":"2","x_ratio":"0.00","y_ratio":"0.00", "layers":"0", "pitch":"0", "yaw":"0", "timer_photo_sta":"0" }
+    returnData={"rval":0, "msg_id":1, "cam_mode":"1", "status":"vf","sdfree":"0","sdtotal":"0","record_time":"0","white_balance":"0","ae_enable":"1","iq_type":"0","exposure_value":"0.0","video_mode":"3840x2160F30","awb_lock":"0","audio_sw":"0","shutter_time":"30","iso_value":"ISO_3200","photo_format":"jpg", "rtsp_res":"720P", "photo_mode":"3", "photo_num":"0", "photo_times":"1", "ev_step":"0.000000", "interval_ms":"1000", "cam_scene":"0", "audio_enable":"0","left_time": "0","metering_mode":"2","x_ratio":"0.00","y_ratio":"0.00", "layers":"0", "pitch":"0", "yaw":"0", "timer_photo_sta":"0" }
     returnData2={
         "rval": 0,
         "msg_id": 1,

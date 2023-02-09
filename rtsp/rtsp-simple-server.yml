@@ -15,7 +15,7 @@ readTimeout: 10s
 writeTimeout: 10s
 # Number of read buffers.
 # A higher value allows a wider throughput, a lower value allows to save RAM.
-readBufferCount: 512
+readBufferCount: 1024
 
 # HTTP URL to perform external authentication.
 # Every time a user wants to authenticate, the server calls this URL
@@ -53,7 +53,7 @@ pprofAddress: 127.0.0.1:9999
 # * RTSP_PORT: server port
 runOnConnect:
 # Restart the command if it exits suddenly.
-runOnConnectRestart: no
+runOnConnectRestart: yes
 
 ###############################################
 # RTSP parameters
@@ -66,7 +66,7 @@ rtspDisable: no
 # UDP-multicast allows to save bandwidth when clients are all in the same LAN.
 # TCP is the most versatile, and does support encryption.
 # The handshake is always performed with TCP.
-protocols: [udp, multicast, tcp]
+protocols: [udp]
 # Encrypt handshakes and TCP streams with TLS (RTSPS).
 # Available values are "no", "strict", "optional".
 encryption: "no"
@@ -98,7 +98,7 @@ authMethods: [basic, digest]
 # RTMP parameters
 
 # Disable support for the RTMP protocol.
-rtmpDisable: no
+rtmpDisable: yes
 # Address of the RTMP listener. This is needed only when encryption is "no" or "optional".
 rtmpAddress: :1935
 # Encrypt connections with TLS (RTMPS).
